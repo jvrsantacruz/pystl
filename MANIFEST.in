@@ -1,0 +1,2 @@
+include pystl/*.h
+include pystl/*.cpp
