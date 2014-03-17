@@ -362,3 +362,66 @@ class VectorInt(Vector):
     vector_equal = lib.py_vector_int_equal
     vector_equal.restype = c_int
     vector_equal.argtypes = [c_void_p, c_void_p]
+
+
+class VectorLong(Vector):
+
+    vector_new = lib.py_vector_long_new
+    vector_new.restype = c_void_p
+    vector_new.argtypes = []
+
+    vector_delete = lib.py_vector_long_delete
+    vector_delete.restype = None
+    vector_delete.argtypes = [c_void_p]
+
+    vector_size = lib.py_vector_long_size
+    vector_size.restype = c_size_t
+    vector_size.argtypes = [c_void_p]
+
+    vector_at = lib.py_vector_long_at
+    vector_at.restype = c_long
+    vector_at.argtypes = [c_void_p, c_size_t]
+
+    vector_set = lib.py_vector_long_set
+    vector_set.restype = None
+    vector_set.argtypes = [c_void_p, c_size_t, c_long]
+
+    vector_push_back = lib.py_vector_long_push_back
+    vector_push_back.restype = None
+    vector_push_back.argtypes = [c_void_p, c_long]
+
+    vector_insert = lib.py_vector_long_insert
+    vector_insert.restype = None
+    vector_insert.argtypes = [c_void_p, c_size_t, c_long]
+
+    vector_erase = lib.py_vector_long_erase
+    vector_erase.restype = None
+    vector_erase.argtypes = [c_void_p, c_size_t]
+
+    vector_erase_slice = lib.py_vector_long_erase_slice
+    vector_erase_slice.restype = None
+    vector_erase_slice.argtypes = [c_void_p, c_size_t, c_size_t]
+
+    vector_find = lib.py_vector_long_find
+    vector_find.restype = c_int
+    vector_find.argtypes = [c_void_p, c_long]
+
+    vector_pop_back = lib.py_vector_long_pop_back
+    vector_pop_back.restype = c_long
+    vector_pop_back.argtypes = [c_void_p]
+
+    vector_count = lib.py_vector_long_count
+    vector_count.restype = c_size_t
+    vector_count.argtypes = [c_void_p, c_long]
+
+    vector_sort = lib.py_vector_long_sort
+    vector_sort.restype = c_void_p
+    vector_sort.argtypes = [c_void_p]
+
+    vector_reverse = lib.py_vector_long_reverse
+    vector_reverse.restype = c_void_p
+    vector_reverse.argtypes = [c_void_p]
+
+    vector_equal = lib.py_vector_long_equal
+    vector_equal.restype = c_int
+    vector_equal.argtypes = [c_void_p, c_void_p]

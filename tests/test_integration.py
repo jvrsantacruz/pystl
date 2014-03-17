@@ -448,6 +448,11 @@ class _TestInt(object):
         return vector.VectorInt(*args, **kwargs)
 
 
+class _TestLong(object):
+    def make_vector(self, *args, **kwargs):
+        return vector.VectorLong(*args, **kwargs)
+
+
 class TestIntegerVector(_TestInt, _Tests):
     pass
 
