@@ -1,0 +1,9 @@
+*.pyc
+*.sw[a-z]
+*.egg-info
+.tox
+.coverage*
+.ropeproject
+*.o
+*.so
+build
