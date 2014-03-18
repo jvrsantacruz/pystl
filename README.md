@@ -30,6 +30,19 @@ This is done through an _adapter_ class which is capable of both creating a new 
 
 Most of the Python `list` interface has been implemented and tested.
 
+Development
+-----------
+
+Tests are written using `nose` and different environments are managed by using `tox`.
+
+So, to install the application in development mode and run the tests:
+
+```shell
+$ virtualenv pystl
+$ pystl/env/activate
+(pystl)$ tox
+```
+
 Status
 ------
 
