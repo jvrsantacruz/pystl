@@ -3,6 +3,8 @@ pystl
 
 Basic ctypes wrapper around C++ STL
 
+[![](https://travis-ci.org/jvrsantacruz/pystl.png?branch=master)](https://travis-ci.org/jvrsantacruz/pystl)
+
 ```python
 from pystl import VectorInt
 
